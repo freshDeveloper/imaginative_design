@@ -1,9 +1,17 @@
-
 body,html {
 	background-color: #ebebeb;
 	font: 13px Georgia, sans-serif;
 	color: #999;
 	margin:0;
+}
+body, html, .container {
+	height:100%;
+}
+.main {
+padding-bottom:63px; /*height of the footer*/
+}
+body > .container {
+	height:auto; min-height:100%;
 }
 div.logo {
 	font-size:26px;
@@ -99,6 +107,7 @@ ul.menu:after {
 .menu li {
 	float:left;
 	list-style:none;
+	position:relative;
 }
 .menu li:hover {
 	background-color: #6a3144;
@@ -116,7 +125,7 @@ ul.menu:after {
 	border-radius:3px 0 0 0;
 }
 ul.submenu {
-	width:100%;
+	width:150px;
 	padding:0;
 }
 ul.submenu a {
@@ -127,9 +136,8 @@ section {
 	margin:auto;
 	margin-top:-13px;
 	background-color:#fff;
-	padding-bottom:30px;
-}
-section h1 {
+} 
+ h1 {
 	font-size:16px;
 	font-weight:normal;
 	text-transform:uppercase;
@@ -140,19 +148,21 @@ section h1 {
 	padding-top: 50px;
 }
 .main_content {
-	max-width:920px;
+	max-width:960px;
 	margin:auto;
 }
-.main_content .photo {
-	height:128px;
-	width:128px;
-	border:none;
-	border-radius:50%;
-	float:left;
-	margin-right:15px;
+.main_content h1 {
+	font-size:16px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#333;
+	padding-top: 50px;
+	margin-left:18%;
 }
+
 .main_content p {
 line-height:1.5;
+margin-left:18%;
 }
 .link a {
 	color: #97455f;
@@ -160,55 +170,17 @@ line-height:1.5;
 	display:inherit;
 	margin-top:20px;
 }
-.advertising {
-	width:920px;
-	border-radius: 5px;
-	background-color: #97455f;
-	color:#e5e5e5;
-	margin-top:50px;	
-	margin-left:auto;
-	margin-right:auto;
-}
-.advertising:after {
-	content:" ";
-	clear:both;
-	display:block;
-}
-.advertising p {
-	font-size:18px;
-	font-weight: normal;
-	margin-left:30px;
-	float:left;
-}
-.advertising p span {
-	font-size:36px;
-	font-weight:normal;
-}
-.contact {
-	float:right;
-	width:288px;
-	height:55px;
-	border-radius:3px;
-	background-color:#fff;
-	margin-right:30px;
-	margin-top:26px;
-}
-.contact a p {
-	text-decoration:none;
-	font-size:26px;
-	font-weight:normal;
-	text-transform:uppercase;
-	color:#97455f;
-	margin-top:10px;
-	margin-left: 13px;
-}
+
 footer {
 	max-width:960px;
 	background-color:#ebebeb;
 	position:relative;
 	font-size:12px;
-	font-weight:normal;
-	margin:auto;
+	font-weight:normal;	
+	margin-top:-63px;
+	height:63px;
+	margin-left:auto;
+	margin-right:auto;
 }
 footer:after {
 	content:" ";
@@ -225,4 +197,3 @@ div.template{
 	margin-top:20px;
 	}
 
- 
