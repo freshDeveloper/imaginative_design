@@ -2,15 +2,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width" initial-scale="1">
 <title>Imaginative</title>
 <link rel="stylesheet" href="css/normalize.css" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+  jQuery(function($){
+           $( '.menu-btn' ).click(function(){
+           $('.menu').toggleClass('expand')
+           })
+        })
+ </script>
 </head>
-<link rel="stylesheet" href="css/styles.css" type="text/css">
+<link rel="stylesheet" href="css/web_styles.css" type="text/css">
 </head>
 <body>
-  <div class="container">
-    <header>
-            <div class="logo">
+	<div class="container">
+		<div class="header_wrapper">
+		     <header>
+		     	<div class="logo">
                 <span>i</span>maginative
             </div>
             <div class="motto">
@@ -21,66 +31,88 @@ Free PSD <br> Website Template
                   </button>
                   <input type="text" name="q" placeholder="Search Our Website">
             </form>
-    </header>
-    <nav>
-      <ul class="menu">
-  <li class= "home"><a href="#">home</a>
+		     </header>
+	    </div>
+		<div class="wrapper">
+		<div class="nav_wrapper">
+		     <nav>
+          <div class="mobile-nav">
+     <div class="menu-btn" id="menu-btn">
+  <div></div>
+  <span></span>
+  <span></span>
+  <span></span>
+     </div>
+			<ul class="menu">
+  <li class= "home"><a href="#">home</a> 
+    
         <ul class="submenu">
           <li> <a href="#">Submenu1</a> </li>
           <li> <a href="#">Submenu2</a> </li>
         </ul>
   </li>
   <li><a href="#">style demo</a>
+  
         <ul class="submenu">
           <li> <a href="#">Submenu3</a> </li>
           <li> <a href="#">Submenu4</a> </li>
         </ul>
   </li> 
   <li><a href="#">full width</a>
+   
         <ul class="submenu">
           <li> <a href="#">Submenu5</a> </li>
           <li> <a href="#">Submenu6</a> </li>
         </ul>   
   </li>
   <li><a href="#">dropdown</a>
+    
         <ul class="submenu">
           <li> <a href="#">Submenu7</a> </li>
           <li> <a href="#">Submenu8</a> </li>
         </ul>   
   </li>
   <li><a href="#">portfolio</a>
+    
         <ul class="submenu">
           <li> <a href="#">Submenu9</a> </li>
           <li> <a href="#">Submenu10</a> </li>
         </ul>
   </li>
   <li><a href="#">gallery</a>
+  
         <ul class="submenu">
           <li> <a href="#">Submenu11</a> </li>
           <li> <a href="#">Submenu12</a> </li>
         </ul>
   </li>
   <li><a href="#">long text link</a>
+    
         <ul class="submenu">
           <li> <a href="#">Submenu13</a> </li>
           <li> <a href="#">Submenu14</a> </li>
         </ul>
   </li>
             </ul>
-    </nav>
-    <section>
-      <h1>your title here</h1>   
-      <div class="main_content">
+          </div>
+		     </nav>
+        </div>
+			<div class="content">
+				<article class="main_page">
+					<h1>your title here</h1>   
           <p>
     <img class="photo" src="images/image1.jpg" alt="image1"/>
     
     Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. 
+    estibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl 
+    
          
          <div class="link">
                     <a href="#"><p>Read More >></p></a>
-         </div>
-      </div>   
-      <div class="advertising">
+         </div> 
+				</article>
+				<div class="advertising_content">
+					<div class="advertising">
         <p> 
             <span> Orciinterdum Corper Elit Nam </span> <br>
             Orciinterdum condimen urabitur laoreet met praesenean et iac !
@@ -89,15 +121,20 @@ Free PSD <br> Website Template
                     <a href="#"><p>contact us today</p></a>
             </div>
       </div>
-        </section>
-    <footer>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer_wrapper">
+	    <footer>
            <div class="copywrite">
         <p>Copywrite&#169;2013 All rights reserved - Domain Name</p>
            </div>
            <div class="template">
         <p>Template by OS Templates</p>
-           </div>      
+           </div>    
         </footer>
-  </div>
+    </div>
 </body>
 </html>
