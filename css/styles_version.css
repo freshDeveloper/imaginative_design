@@ -128,10 +128,11 @@ div.logo {
 	color:#333;
 	float:left;
 }
-.logo span {
+div.logo::first-letter {
 	font-size:36px;
 	font-weight:normal;
 }
+
 div.motto {
 	font-size:12px;
 	font-weight:normal;
@@ -163,21 +164,21 @@ div.motto {
 	}
 }
 /*SEARCH BUTTON STYLES*/
-input{
+div.button_wrapper {
 	float:right;
+}
+input{
 	background-color:#fff;
 	height:40px;
-	width:22.92%; /* from header*/
+	width:176px;
 	vertical-align:top;
 	border-radius: 3px 0 0 3px;
 	font-size:12px;
 	font-weight:normal;
 	border:none;
 	padding: 0 1.04%; /* from header*/
-	margin-right:0.20%; /* from header*/
 }
 form [name="search Our Website"]{
-	float:right;
 	margin-right:2.08%; /* from header*/
 	margin-top:20px;
 }
@@ -187,11 +188,11 @@ button.search {
 	font-size:12px;
 	font-weight:normal;
 	height:40px;
-	width:7.81%; /* from header*/
+	width:60px;
 	border-radius: 0 5px 5px 0;
 	border:none;
 	text-transform:uppercase;
-	float:right;
+	position:relative;
 }
 @media (max-width:768px){
 	div.button_wrapper{
@@ -498,25 +499,21 @@ div .article_container {
 	margin-top:30px;
 }
 .article_container .article_left {
-	position:relative;
 	width:33%;
 	float:left;
 }
 .article_container .article_middle {
 	width:33%;
-	position:relative;
 	float:left;
 }
 .article_container .article_right {
 	width:33%;
-	position:relative;
 	float:left;
 }
 .article_container div{
 	position: relative;
 }
 div .row {
-	position: relative;
 	margin-bottom: 30px;
 }
 .row img {
@@ -525,7 +522,6 @@ border: 1px solid #D8D8D8;
 padding: 3px;
 }
 .row span {
-width: 50%;
 margin-left:2%;
 color: #d54346 !important;
 
@@ -589,7 +585,6 @@ div .article_container {
 .bottom_article_container div {
 	width:48%;
 	float:left;
-	position:relative;
 }
 .bottom_article_container span{
 color:#333;
@@ -715,7 +710,6 @@ margin-left:10px;
 	.bottom_blog {
 		width:45%;
 		float:left;
-		position:relative;
 	}
 	.bottom_container span {
 	font:13px Georgia, sans-serif;
@@ -734,7 +728,6 @@ margin-left:10px;
 	}
 	.company_details {
 		width:30%;
-		position:relative;
 		float:left;
 	}
 	.bottom_container p {
@@ -752,7 +745,6 @@ margin-left:10px;
 .contact_us {
 	width:25%;
 	float:left;
-	position:relative;
 }
 .contact_us input {
 	width:90%;
